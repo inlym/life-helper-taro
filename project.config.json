@@ -1,7 +1,7 @@
 {
   "miniprogramRoot": "./dist",
-  "projectname": "life-helper-taro",
-  "description": "life-helper-taro",
+  "projectname": "life-helper-taro3",
+  "description": "hello",
   "appid": "touristappid",
   "setting": {
     "urlCheck": true,

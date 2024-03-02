@@ -13,17 +13,15 @@
     "noUnusedParameters": true,
     "strictNullChecks": true,
     "sourceMap": true,
+    "baseUrl": ".",
     "rootDir": ".",
     "jsx": "preserve",
     "allowJs": true,
     "resolveJsonModule": true,
     "typeRoots": [
       "node_modules/@types"
-    ],
-    "paths": {
-      "@/*": ["src/*"]
-    }
+    ]
   },
-  "include": ["./src", "./types", "./config"],
+  "include": ["./src", "./types"],
   "compileOnSave": false
 }
