@@ -1,8 +1,8 @@
 {
   "miniprogramRoot": "./dist",
-  "projectname": "life-helper-taro3",
-  "description": "hello",
-  "appid": "touristappid",
+  "projectname": "life-helper-taro",
+  "description": "小鸣助手小程序",
+  "appid": "wx09c0a1ea5251c75a",
   "setting": {
     "urlCheck": true,
     "es6": false,
