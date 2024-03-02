@@ -1,3 +1,5 @@
+import path from 'path'
+
 const config = {
   projectName: 'life-helper-taro3',
   date: '2024-3-3',
@@ -9,14 +11,11 @@ const config = {
   },
   sourceRoot: 'src',
   outputRoot: 'dist',
-  plugins: ["@tarojs/plugin-html"],
-  defineConstants: {
-  },
+  plugins: ['@tarojs/plugin-html', '@tarojs/plugin-http'],
+  defineConstants: {},
   copy: {
-    patterns: [
-    ],
-    options: {
-    }
+    patterns: [],
+    options: {}
   },
   framework: 'vue3',
   compiler: 'webpack5',
@@ -24,7 +23,7 @@ const config = {
     enable: false // Webpack 持久化缓存配置，建议开启。默认配置请参考：https://docs.taro.zone/docs/config-detail#cache
   },
   mini: {
-    webpackChain (chain) {
+    webpackChain(chain) {
       chain.merge({
         module: {
           rule: {
@@ -44,9 +43,7 @@ const config = {
     postcss: {
       pxtransform: {
         enable: true,
-        config: {
-
-        }
+        config: {}
       },
       url: {
         enable: true,
@@ -69,8 +66,7 @@ const config = {
     postcss: {
       autoprefixer: {
         enable: true,
-        config: {
-        }
+        config: {}
       },
       cssModules: {
         enable: false, // 默认为 false，如需使用 css modules 功能，则设为 true
