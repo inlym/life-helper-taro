@@ -38,6 +38,9 @@ dependencies:
   '@tarojs/plugin-platform-weapp':
     specifier: 3.6.24
     version: 3.6.24(@tarojs/components@3.6.24)(@tarojs/shared@3.6.24)(@tarojs/taro@3.6.24)
+  '@tarojs/router':
+    specifier: ^3.6.24
+    version: 3.6.24(@tarojs/runtime@3.6.24)(@tarojs/taro@3.6.24)
   '@tarojs/runtime':
     specifier: 3.6.24
     version: 3.6.24(@tarojs/shared@3.6.24)
@@ -63,6 +66,9 @@ devDependencies:
     version: 7.24.0
   '@tarojs/cli':
     specifier: 3.6.24
+    version: 3.6.24(@tarojs/taro@3.6.24)
+  '@tarojs/plugin-html':
+    specifier: ^3.6.24
     version: 3.6.24(@tarojs/taro@3.6.24)
   '@tarojs/taro-loader':
     specifier: 3.6.24
@@ -2430,6 +2436,22 @@ packages:
       - '@tarojs/taro'
       - supports-color
     dev: false
+
+  /@tarojs/plugin-html@3.6.24(@tarojs/taro@3.6.24):
+    resolution: {integrity: sha512-KkDOxcE2743+9Vk3RFD1bdYSSvb0cCg27Pr7jM1SgQSmAL/wBXryaEGQr9IV8n1sI4yqvfSOsndaeYBCbeRzgQ==}
+    dependencies:
+      '@babel/generator': 7.23.6
+      '@babel/parser': 7.24.0
+      '@babel/traverse': 7.24.0
+      '@babel/types': 7.24.0
+      '@tarojs/runtime': 3.6.24(@tarojs/shared@3.6.24)
+      '@tarojs/service': 3.6.24(@tarojs/shared@3.6.24)(@tarojs/taro@3.6.24)
+      '@tarojs/shared': 3.6.24
+    transitivePeerDependencies:
+      - '@swc/helpers'
+      - '@tarojs/taro'
+      - supports-color
+    dev: true
 
   /@tarojs/plugin-platform-alipay@3.6.24(@tarojs/components@3.6.24)(@tarojs/taro@3.6.24):
     resolution: {integrity: sha512-ckSbEAKGk5jWGmN9F46RLAR7O74REvEXIDjcjm7pYEJF4wFfhWcUIVuzIM/anewGFwIhiT8PxGAFqWis0mTZHQ==}
