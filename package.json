@@ -21,10 +21,12 @@
   "author": "inlym",
   "license": "MIT",
   "dependencies": {
+    "@alova/adapter-taro": "^1.2.1",
     "@babel/runtime": "^7.24.0",
     "@tarojs/components": "3.6.24",
     "@tarojs/helper": "3.6.24",
     "@tarojs/plugin-framework-vue3": "3.6.24",
+    "@tarojs/plugin-http": "^3.6.24",
     "@tarojs/plugin-platform-alipay": "3.6.24",
     "@tarojs/plugin-platform-h5": "3.6.24",
     "@tarojs/plugin-platform-jd": "3.6.24",
@@ -36,6 +38,7 @@
     "@tarojs/runtime": "3.6.24",
     "@tarojs/shared": "3.6.24",
     "@tarojs/taro": "3.6.24",
+    "alova": "^2.17.1",
     "pinia": "^2.1.7",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"

@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@alova/adapter-taro':
+    specifier: ^1.2.1
+    version: 1.2.1
   '@babel/runtime':
     specifier: ^7.24.0
     version: 7.24.0
@@ -17,6 +20,9 @@ dependencies:
   '@tarojs/plugin-framework-vue3':
     specifier: 3.6.24
     version: 3.6.24(@tarojs/runtime@3.6.24)(@tarojs/shared@3.6.24)(@tarojs/taro@3.6.24)(vue@3.4.21)
+  '@tarojs/plugin-http':
+    specifier: ^3.6.24
+    version: 3.6.24(@tarojs/taro@3.6.24)
   '@tarojs/plugin-platform-alipay':
     specifier: 3.6.24
     version: 3.6.24(@tarojs/components@3.6.24)(@tarojs/taro@3.6.24)
@@ -50,6 +56,9 @@ dependencies:
   '@tarojs/taro':
     specifier: 3.6.24
     version: 3.6.24(@tarojs/helper@3.6.24)(@tarojs/runtime@3.6.24)(postcss@8.4.35)(vue@3.4.21)
+  alova:
+    specifier: ^2.17.1
+    version: 2.17.1
   pinia:
     specifier: ^2.1.7
     version: 2.1.7(typescript@4.9.5)(vue@3.4.21)
@@ -140,6 +149,10 @@ packages:
     resolution: {integrity: sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==}
     engines: {node: '>=0.10.0'}
     dev: true
+
+  /@alova/adapter-taro@1.2.1:
+    resolution: {integrity: sha512-YxfIGHX20rI10z+W12ackx3/tca31K0wrmILQdOQYWiWuaeMFdkx+HxS5SItRoq4Wgy7dm1rp50PIY3W3b26lw==}
+    dev: false
 
   /@ampproject/remapping@2.3.0:
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
@@ -2453,6 +2466,18 @@ packages:
       - supports-color
     dev: true
 
+  /@tarojs/plugin-http@3.6.24(@tarojs/taro@3.6.24):
+    resolution: {integrity: sha512-82cPUvMZdejSE4+4zuTpNav+zZCIHHgExW0Si9HMTiuwvakEw67BbTxP5E2oMrr/9YEo2zeaVgw8cGLrf415hg==}
+    dependencies:
+      '@tarojs/runtime': 3.6.24(@tarojs/shared@3.6.24)
+      '@tarojs/service': 3.6.24(@tarojs/shared@3.6.24)(@tarojs/taro@3.6.24)
+      '@tarojs/shared': 3.6.24
+    transitivePeerDependencies:
+      - '@swc/helpers'
+      - '@tarojs/taro'
+      - supports-color
+    dev: false
+
   /@tarojs/plugin-platform-alipay@3.6.24(@tarojs/components@3.6.24)(@tarojs/taro@3.6.24):
     resolution: {integrity: sha512-ckSbEAKGk5jWGmN9F46RLAR7O74REvEXIDjcjm7pYEJF4wFfhWcUIVuzIM/anewGFwIhiT8PxGAFqWis0mTZHQ==}
     peerDependencies:
@@ -3750,6 +3775,11 @@ packages:
       require-from-string: 2.0.2
       uri-js: 4.4.1
     dev: true
+
+  /alova@2.17.1:
+    resolution: {integrity: sha512-AJhbvKdABci95D3gQ/ct+JE58PHdTToSVLtcvyZo0QIcLabNwPi1UzKEQ8H2yK3uBuEB1X/J0tZqpPZnJ2QCsg==}
+    engines: {node: '>= 0.12.0'}
+    dev: false
 
   /ansi-align@3.0.1:
     resolution: {integrity: sha512-IOfwwBF5iczOjp/WeY4YxyjqAFMQoZufdQWDd19SEExbVLNXqvpzSJ/M7Za4/sCPmQ0+GRquoA7bGcINcxew6w==}
