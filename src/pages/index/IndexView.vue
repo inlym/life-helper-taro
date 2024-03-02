@@ -4,12 +4,13 @@
 </template>
 
 <script setup lang="ts">
-import Taro from "@tarojs/taro";
+import {alovaInstant} from '../../core/http'
 
 const aaa = () => {
-  console.log("hello world");
-  Taro.navigateTo({ url: "/pages/index/TestView" });
-};
+  console.log('hello world')
+  // Taro.navigateTo({url: '/pages/index/TestView'})
+  alovaInstant.Get('/debug').then((res) => console.log(res))
+}
 </script>
 
 <style scope lang="scss">
