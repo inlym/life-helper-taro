@@ -5,3 +5,6 @@ deploy_versions/
 node_modules/
 .DS_Store
 .swc
+
+# 生产环境变量配置
+.env.prod
