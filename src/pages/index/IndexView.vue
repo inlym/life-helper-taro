@@ -4,12 +4,10 @@
 </template>
 
 <script setup lang="ts">
-import {alovaInstant} from '../../core/http'
+import {environments} from '../../core/env'
 
 const aaa = () => {
-  console.log('hello world')
-  // Taro.navigateTo({url: '/pages/index/TestView'})
-  alovaInstant.Get('/debug').then((res) => console.log(res))
+  console.log(environments)
 }
 </script>
 
